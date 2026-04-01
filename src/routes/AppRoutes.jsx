@@ -1,6 +1,5 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Analytics from "../screens/Dashboard/analytics";
 import Ecommerce from "../screens/Dashboard/Ecommerce";
 import Crypto from "../screens/Dashboard/Crypto";
 import Settings from "../screens/Pages/Settings";
@@ -13,11 +12,12 @@ import Chat from "../screens/Pages/Chat";
 import Invoice from "../screens/Invoice";
 import Tasks from "../screens/Tasks";
 import Calender from "../screens/Calender";
+import Analytic from "../screens/Dashboard/Analytic";
 const AppRoutes = () => {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<Analytics />} />
+        <Route path="/" element={<Analytic />} />
         <Route path="/dashboard-ecommerce" element={<Ecommerce />} />
         <Route path="/dashboard-crypto" element={<Crypto />} />
 
